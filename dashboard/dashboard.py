@@ -20,7 +20,7 @@ def visualisasi_data_pertanyaan2(semua_data_df):
     df = semua_data_df[['hum_hour', 'cnt_hour']]
     return df
 
-semua_data_df = pd.read_csv("semua_data_df.csv")
+semua_data_df = pd.read_csv("dashboard/semua_data_df.csv")
 
 data_pertanyaan1 = visualisasi_data_pertanyaan1(semua_data_df)
 peminjaman_pada_hari_kerja = data_pertanyaan1.loc[data_pertanyaan1['Hari'] == 'Hari Kerja', 'Jumlah Peminjaman'].values[0]
